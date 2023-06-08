@@ -15243,7 +15243,7 @@ El area del rectangulo tiene un 8 de ancho y un 2 de alto y es igual a 16
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
@@ -15255,29 +15255,51 @@ El area del rectangulo tiene un 8 de ancho y un 2 de alto y es igual a 16
 </div>
 </div>
 
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="n">h</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">h_1</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="n">h_2</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="n">h_3</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_1</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_1</span><span class="p">)</span><span class="si">}</span><span class="s2">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_2</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_2</span><span class="p">)</span><span class="si">}</span><span class="s2">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_3</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_3</span><span class="p">)</span><span class="si">}</span><span class="s2">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_1</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">square</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_2</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">square</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_2</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The derivative of f(x) = x^2 at x </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> using h = </span><span class="si">{</span><span class="n">h_3</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">central_difference</span><span class="p">(</span><span class="n">square</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">h_3</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The derivative of f(x) = x^2 at x 2 using h = 0.1 is 4.100000000000001
+The derivative of f(x) = x^2 at x 2 using h = 0.01 is 4.009999999999891
+The derivative of f(x) = x^2 at x 2 using h = 0.001 is 4.000999999999699
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
