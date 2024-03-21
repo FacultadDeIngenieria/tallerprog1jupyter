@@ -66,17 +66,6 @@ jupyter notebook
 ### Other Operating Systems
 For other operating systems (e.g., Linux), you can follow the general installation instructions available on the [Jupyter documentation](https://jupyter.org/install) website.
 
-## Forking the Repository
-To get started with the assignment, you need to fork the assignment repository on Git. Follow the steps below to fork the repository and set up your own copy:
-
-1. Visit the assignment repository on Git https://github.com/FacultadDeIngenieria/tallerprog1jupyter
-2. Click on the "Fork" button in the upper right corner of the repository page.
-3. Wait for the repository to be forked to your Git account.
-4. Once the forking process is complete, you will be redirected to your forked repository.
-5. You can now clone the repository (**the one associated to your GitHub Account**) to your local machine and start working on the assignment. If you have SSH keys created, you need to use the SSH url. If not, use the HTTPS ones.
-
-[![Video example of fork](http://img.youtube.com/vi/Cv10iflbR7w/0.jpg)](http://www.youtube.com/watch?v=Cv10iflbR7w "Video example of fork")
-
 ## The Assignment
 
 There's a pre-existing jupyter notebook file, you need to make a copy of it before starting.
@@ -89,8 +78,6 @@ All the instructions and exercises are in the notebook file, you can open it wit
 
 Here's a checklist in case you aren't sure what to do:
 
-- [ ] Fork the repository
-- [ ] Clone the repository to your local machine
 - [ ] Install Jupyter Notebooks
 - [ ] Create a copy of the notebook file and rename it.
 - [ ] Open the notebook file with Jupyter Notebooks
@@ -103,22 +90,4 @@ Here's a checklist in case you aren't sure what to do:
   - [ ] Make sure that EXERCISE 4 is finished
   - [ ] Make sure that EXERCISE 5 is finished
   - [ ] Make sure that EXERCISE 6 is finished
-- [ ] Commit and push your changes to your forked repository
-- [ ] Create a pull request to submit your work
-- [ ] Wait for the pull request to be reviewed and merged by the assignment maintainer
-
-## Completing the Assignment
-To complete the assignment, you will work with Jupyter Notebooks and solve a set of Python exercises. Follow the steps below:
-
-A pull request is a way to submit your changes to the original repository. Once you have completed the assignment, you will need to create a pull request to submit your work. Follow the steps below to create a pull request:
-
-1. Go to the assignment repository on Git from your GitHub account.
-2. Click on the "Pull Request" button in the upper right corner of the repository page.
-3. Make sure the "base repository" is the one you forked in the previous section, and points to the branch `2023`.
-4. Make sure the "head repository" is the one associated to your GitHub account, and has your changes. It can be either `main` or `2023`, but make sure your changes are in the selected branch. 
-5. Click on the "Create pull request" button.
-6. Add a title with your firstname and lastname, and a description to your pull request with any concerns or questions you may have about the assignment.
-7. Click on the "Create pull request" button to submit your work.
-8. Wait for the pull request to be reviewed and merged by the assignment maintainer.
-
-[![Video example of Pull request](http://img.youtube.com/vi/HElz29gLeFs/0.jpg)](http://www.youtube.com/watch?v=HElz29gLeFs "Video example of Pull request")
+- [ ] Upload your new notebook file to the repository.
